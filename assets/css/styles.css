@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* ===== GERAL ===== */
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+section {
+  /*padding: 80px 20px;*/
+  padding: 8px 15px;
+}
+
+h2 {
+  font-size: 35px;
+  /*margin-bottom: 1.5rem;*/
+  /*font-size: 35px;*/
+}
+
+/* ===== HEADER ===== */
+.header-main {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  transition: 0.5s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-main.sticky {
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.header-logo {
+  color: #333;
+  font-size: 2rem;
+}
+
+.header-logo span {
+  color: #007BFF;
+  font-size: 1.8rem;
+}
+
+/* Menu Mobile */
+#toggle {
+  display: none;
+}
+
+.menu-label {
+  color: #000;
+  cursor: pointer;
+  margin: 0 30px 0 0;
+  position: absolute;
+  right: 20px;
+  display: none;
+  font-size: 1.2rem;  
+}
+
+.header-menu {
+  width: 70%;
+  justify-content: center;
+  z-index: 5;
+  /* background-color: #fff; */
+
+  /* position: relative; */
+  display: flex;
+  /* align-items: center; */
+}
+
+.header-menu li {
+  list-style: none;
+  margin-left: 20px;
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  padding: 15px 10px;
+  color: #000;
+}
+
+.header-main .header-menu li a:hover {
+  color: #007BFF;
+}
+
+.header-btn {
+  right: 0;
+}
+
+/* .header-btn>a {
+  font-size: 1em;
+  color: #fff;
+  background: #007BFF;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 5px;
+} */
+
+.header-btn a {
+  background: #007BFF;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ===== HOME ===== */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/b1_new.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container {
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.home-container p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* ===== SEÇÕES DE CARDS ===== */
+.especialidades,
+.laudos,
+.terapias,
+.orientacao {
+  padding-top: 50px;
+  /*width: 800px;*/
+}
+
+.section-titulo {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 250px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-texto {
+  padding: 20px;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+  padding-top: 100px;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+}
+
+.sobre-texto,
+.sobre-imagem {
+  width: 100%;
+}
+
+.sobre-imagem-container {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sobre-imagem-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== FOOTER ===== */
+/*footer {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 40px 20px;
+}*/
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-legal {
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 16px 16px 24px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 966px) {
+  /* Menu Mobile */
+  .header-main {
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  #toggle{
+    content: '\2262';
+  }
+
+  #toggle:checked+.header-menu ul li{
+    display: block;
+  }
+
+  .menu-label {
+    display: block;
+    cursor: pointer;;
+  }
+
+  .header-menu {
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+    background-color: #fff;
+    
+    /* position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #fff;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;  */
+  }
+
+  .header-menu.active {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: relative;
+    top: 68px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff
+    
+    /* left: 0; */
+  }
+
+  .header-menu ul li {
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 20px;
+  }
+
+  .header-menu li {
+    margin: 15px 0;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  /* Ajustes Gerais */
+  .home-container h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 100px 50px;
+  }
+
+  .header-main {
+    padding: 15px 50px;
+  }
+
+  .home-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+
+  .sobre-container {
+    flex-direction: row;
+  }
+
+  .sobre-texto,
+  .sobre-imagem {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 120px 100px;
+  }
+
+  .header-main.sticky {
+    padding: 10px 100px;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+  }
+
+  .home-container h2 {
+    font-size: 4.5rem;
+  }
+
+  .sobre-imagem-container {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== COMPONENTES REUTILIZÁVEIS ===== */
+.btn {
+  display: inline-block;
+  background: #007BFF;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+
+/* ===== AJUSTES ESPECÍFICOS ===== */
+.terapias-card,
+.orientacao-card {
+  max-width: 450px;
+}
+
+.sobre-titulo {
+  font-size: 2.5rem;
+}
